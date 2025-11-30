@@ -1,0 +1,145 @@
+---
+title: "ANOTACION DE HOJAS EN LABEL STUDIO"
+author: "GRUPO 6"
+format: html
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# *Integrantes G6*
+
+1.  Huaman Rimarachin Milver
+
+2.  Rivera Jimenez Yanet
+
+3.  Tuesta Chichipe Aracely
+
+4.  
+
+5.  
+
+# *Introducción*
+
+La anotación de imágenes es esencial en tareas de visión por
+computadora, como la detección de objetos y clasificación de imágenes.
+LabelStudio, una plataforma de código abierto, facilita la anotación de
+datos, permitiendo etiquetar imágenes para entrenar modelos de
+aprendizaje automático (Pavlov et al., 2020). Este proyecto explora la
+integración de LabelStudio con RStudio para analizar imágenes anotadas.
+El flujo de trabajo incluye la carga de imágenes, su anotación en
+LabelStudio, y el análisis de estas anotaciones en RStudio, con el
+objetivo de evaluar cómo las anotaciones impactan en el rendimiento de
+los modelos y mejorar la calidad de los datos en proyectos de análisis
+de imágenes.
+
+# *Objetivo*
+
+Realizar las anotaciones de las 25 imagenes trabajadas con su respectiva
+area, peciolo y escala para entrenar el programa
+
+# *Estructura para realizar la anotacion de imagenes*
+
+1.  Iniciar LabelStudio
+
+2.  Crear un nuevo proyecto
+
+3.  Subir las imágenes
+
+4.  Definir tipos de anotaciones
+
+5.  Realizar las anotaciones correspondientes
+
+6.  Guardar las anotaciones
+
+7.  Repetir para todas las imágenes
+
+# *Desarrollo*
+
+##Iniciar LabelStudio
+
+###Instalación y configuración inicial de LabelStudio:
+
+Si aún no lo tienes instalado, puedes hacerlo desde el sitio oficial de
+LabelStudio o usando el siguiente comando en la terminal:
+
+![](images/clipboard-125709980.png)
+
+Inicia LabelStudio:
+
+![](images/clipboard-322563419.png) \## Crear el nuevo proyecto En la
+interfaz de LabelStudio, haz clic en "Create Project".
+
+![](images/Captura%20de%20pantalla%202025-11-30%20175220.png)
+
+Ingresa un nombre para tu proyecto y una breve descripción.
+
+![](images/Captura%20de%20pantalla%202025-11-30%20175856.png)
+
+Elige el tipo de tarea (por ejemplo, Imagen si vas a trabajar con
+imágenes).
+
+## Subir las imagenes dentro del proyecto recién creado, haz
+
+clic en "Import" y selecciona "Upload Files".
+
+LabelStudio te permitirá subir múltiples imágenes a la vez. También
+puedes integrarlo con Google Drive o importar desde otras fuentes.
+
+##Configurar el esquema de anotaciones:
+
+En LabelStudio, puedes definir qué tipo de anotaciones deseas realizar
+en las imágenes. Esto se configura en el paso de labeling interface.
+
+Haz clic en "Labeling Setup" y selecciona el tipo de anotación. Aquí
+puedes elegir:
+
+![](images/Captura de pantalla 2025-11-30 175943-01.png)
+
+Polígonos (Polygons): Para áreas irregulares.
+
+Selecciona y configura las opciones que mejor se adapten a tu caso.
+Realizar las anotaciones correspondientes
+
+##Comenzar la anotación:
+
+Después de configurar la interfaz de anotación, haz clic en "Label"
+dentro de tu proyecto.
+
+Se abrirán las imágenes cargadas, y podrás comenzar a anotar. Dibuja el
+polígono alrededor del objeto:
+
+![](images/Captura de pantalla 2025-11-30 180255.png)
+
+Haz clic para establecer los puntos de un polígono alrededor del objeto
+que deseas segmentar. Cada clic creará un vértice del polígono.
+
+![](images/Captura de pantalla 2025-11-30 180702.png)
+
+Continúa haciendo clic en el contorno del objeto hasta que lo rodees
+completamente.
+
+Para cerrar el polígono, haz clic en el primer punto donde comenzaste.
+
+##Asignar una etiqueta:
+
+Después de cerrar el polígono, se te pedirá que asocies el polígono con
+una etiqueta.
+
+Por ejemplo, en nuestro caso sera hoja, peciolo y escala
+
+Selecciona la etiqueta adecuada de la lista de etiquetas predefinidas o
+crea una nueva etiqueta si es necesario. ##Guardar las anotaciones:
+
+Una vez hayas etiquetado el objeto o área de interés, LabelStudio te
+permitirá guardar la anotación.
+
+Puedes hacer esto en tiempo real o al finalizar varias anotaciones.
+
+##Repetir para todas las imágenes:
+
+Después de haber anotado una imagen, puedes proceder a la siguiente
+imagen y repetir el proceso de anotación.
+
+LabelStudio también permite trabajar en equipos, por lo que diferentes
+personas pueden etiquetar imágenes de manera simultánea.
